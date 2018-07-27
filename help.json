@@ -1,0 +1,143 @@
+[
+  [
+    "HELP",
+    "called with --help"
+  ],
+  [
+    "select",
+    "coloana1",
+    "coloana2",
+    "...",
+    "this option holds the columns for output, separated by comma",
+    "if * is set the select return all columns",
+    "seclect is required"
+  ],
+  [
+    "from",
+    "file.csv",
+    "from is required"
+  ],
+  [
+    "output",
+    "csv",
+    "screen",
+    "output is defaulted to screen"
+  ],
+  [
+    "output-file",
+    "file.csv",
+    "required if output has been set to csv"
+  ],
+  [
+    "sort-column",
+    "nume_coloana",
+    "sorts the rows according to the given column (with mode and direction)"
+  ],
+  [
+    "sort-mode",
+    "alpha",
+    "numeric",
+    "natural",
+    "needed if sort-column is set"
+  ],
+  [
+    "sort-direction",
+    "asc",
+    "desc",
+    "needed if sort-column is set"
+  ],
+  [
+    "multi-sort",
+    "col1",
+    "col2",
+    "...",
+    "this option holds the columns by which to sort, separated by comma",
+    "sorts the rows in the table according to the given columns and directions"
+  ],
+  [
+    "multi-sort-dir",
+    "asc",
+    "asc",
+    "...",
+    "this option holds the direction for each multi sort column separated by comma",
+    "needed if multi-sort is set"
+  ],
+  [
+    "unique",
+    "coloana",
+    "removes the duplicate rows from the table "
+  ],
+  [
+    "where",
+    "coloana<>valoarea",
+    "coloana=valoarea",
+    "coloana<valoarea",
+    "coloana>valoarea",
+    "used without spaces between column|value and sign",
+    "removes the rows from the table which correspond to the where input",
+    "example: if coloana<>valoare, the columns which have value===valoare are removed"
+  ],
+  [
+    "aggregate-sum",
+    "coloana",
+    "appends to the first row of the table the sum of all the rows on the column coloana, removes the rest of the table"
+  ],
+  [
+    "aggregate-product",
+    "coloana",
+    "appends to the first row of the table the product of all the rows on the column coloana, removes the rest of the table"
+  ],
+  [
+    "aggregate-list",
+    "coloana",
+    "appends to the first row of the table the concatenated value of all the rows on the column coloana, using the given glue, removes the rest of the table"
+  ],
+  [
+    "aggregate-list-glue",
+    "_",
+    " ",
+    "any glue you want",
+    "needed if aggregate-list is present"
+  ],
+  [
+    "uppercase-column",
+    "coloana",
+    "maps to uppercase all the values on all rows in the given column"
+  ],
+  [
+    "lowercase-column",
+    "coloana",
+    "maps to lowercase all the values on all rows in the given column"
+  ],
+  [
+    "titlecase-column",
+    "coloana",
+    "maps to titlecase all the values on all rows in the given column"
+  ],
+  [
+    "power-values",
+    "coloana",
+    "puterea",
+    "example: --power-values coloana puterea",
+    "used with space between column and value and quotes surrounding",
+    "raises to power putere all the values on all rows in the given column"
+  ],
+  [
+    "map-function",
+    "nume_functie",
+    "a nume_functie.php file can be added by the user at the root of the project",
+    "maps all the values on all rows according to the function given",
+    "example of file: upper.php"
+  ],
+  [
+    "map-function-column",
+    "coloana",
+    "needed if map-function is present"
+  ],
+  [
+    "column-sort",
+    "asc",
+    "desc",
+    "sorts the columns shown to the user"
+  ]
+]
